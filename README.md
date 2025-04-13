@@ -26,4 +26,8 @@ A web-based smart assistant that generates healthy meal plans, grocery lists, an
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/meal-planner-ai.git
+cd meal-planner-ai
+
 
