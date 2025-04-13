@@ -30,4 +30,88 @@ A web-based smart assistant that generates healthy meal plans, grocery lists, an
 git clone https://github.com/your-username/meal-planner-ai.git
 cd meal-planner-ai
 
+2. Install Backend Dependencies
+bash
+Copy
+Edit
+cd server
+npm install
+
+3.Setup Environment Variables
+Create a .env file in the server/ folder:
+
+env
+Copy
+Edit
+HUGGINGFACE_API_KEY=your-huggingface-api-key
+You can get your key from https://huggingface.co/settings/tokens
+
+
+4. Start the Server
+bash
+Copy
+Edit
+node index.js
+Server will run at: http://localhost:3000
+
+5. Open the Frontend
+Just open client/index.html in a browser
+Or use Live Server extension (recommended)
+
+📦 Project Structure
+pgsql
+Copy
+Edit
+meal-planner-ai/
+├── client/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── server/
+│   ├── index.js
+│   └── routes/
+│       ├── mealPlan.js
+│       ├── groceryList.js
+│       └── nutritionTips.js
+│
+├── .env
+└── README.md
+📋 API Endpoints
+Endpoint	Method	Description
+/api/mealPlan	POST	Generates a 1-day meal plan using GPT-2
+/api/groceryList	POST	Creates a categorized grocery list
+/api/nutritionTips	POST	Returns 3 nutrition tips
+🔐 Example Input
+json
+Copy
+Edit
+{
+  "diet": "vegetarian",
+  "allergies": "nuts",
+  "goal": "muscle gain"
+}
+💡 Notes
+Models used: google/flan-t5-small or similar
+
+Rate limits may apply on Hugging Face's free tier
+
+For best performance, use structured prompts and handle errors gracefully
+
+📜 License
+MIT License — free to use, learn, and improve!
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you'd like:
+- A version with screenshots or demo GIFs 📸
+- A short description for GitHub repo or presentation
+- Poster content if this is for submission/presentation 📊
+
+Happy to help polish this up!
+
 
