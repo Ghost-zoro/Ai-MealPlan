@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Meal Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="loader" class="loader hidden"></div>
+
+  <div class="container">
+    <h1>🍽️ Personalized AI Meal Planner</h1>
+
+    <label for="diet">Diet</label>
+    <input id="diet" placeholder="e.g. vegetarian, keto" />
+
+    <label for="allergies">Allergies</label>
+    <input id="allergies" placeholder="e.g. nuts, gluten" />
+
+    <label for="ingredients">Available Ingredients</label>
+    <input id="ingredients" placeholder="e.g. rice, tomato, spinach" />
+
+    <label for="goal">Health Goal</label>
+    <select id="goal">
+      <option value="weight loss">Weight Loss</option>
+      <option value="muscle gain">Muscle Gain</option>
+      <option value="general health">General Health</option>
+    </select>
+
+    <button onclick="getMealPlan()">Generate Plan</button>
+
+    <h2>🗓️ Meal Plan</h2>
+    <pre id="mealPlan">Loading...</pre>
+
+    <h2>🛒 Grocery List</h2>
+    <pre id="groceryList">Loading...</pre>
+
+    <h2>💡 Nutritional Tips</h2>
+    <pre id="nutritionTips">Loading...</pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

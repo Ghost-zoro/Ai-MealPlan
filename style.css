@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #c2c7d2;
+    color: #333;
+    padding: 2rem;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    background: #0c0909;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    color: #dfe4ea;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #f4e9e9;
+    border-radius: 6px;
+  }
+  
+  button {
+    padding: 0.7rem 1.4rem;
+    background: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #004ecc;
+  }
+  
+  pre {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-left: 5px solid #0066ff;
+    white-space: pre-wrap;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+  }
+  
+  /* Add at bottom of style.css */
+@media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+      margin: 1rem;
+    }
+  
+    input, select, button {
+      font-size: 1rem;
+      padding: 0.6rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    pre {
+      font-size: 0.95rem;
+    }
+  }
+  
+  .loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #0066ff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.8s linear infinite;
+    margin: 1rem auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
