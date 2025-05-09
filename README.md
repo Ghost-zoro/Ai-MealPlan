@@ -107,11 +107,6 @@ Edit
 
 ---
 
-Let me know if you'd like:
-- A version with screenshots or demo GIFs 📸
-- A short description for GitHub repo or presentation
-- Poster content if this is for submission/presentation 📊
 
-Happy to help polish this up!
 
 
